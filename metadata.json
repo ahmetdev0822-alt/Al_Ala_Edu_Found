@@ -1,0 +1,6 @@
+{
+  "name": "Al-Ala Education Foundation",
+  "description": "Official website for Al-Ala Education Foundation — empowering communities through education, health, women's welfare, child welfare, and humanitarian relief.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
