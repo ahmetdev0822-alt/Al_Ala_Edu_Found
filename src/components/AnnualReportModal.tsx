@@ -19,22 +19,22 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-xs animate-in fade-in">
       <div 
-        className="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] my-auto border border-stone-200"
+        className="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] my-auto border border-stone-200 animate-in fade-in zoom-in-95 slide-in-from-bottom-4 duration-300"
         onClick={(e) => e.stopPropagation()}
       >
         
         {/* Top Header */}
-        <div className="p-6 bg-[#1B262C] text-white flex items-center justify-between border-b border-[#2C3A3F]">
+        <div className="p-6 bg-[#0D3B82] text-white flex items-center justify-between border-b border-[#1A4E9E]">
           <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-xl bg-[#C1622D] text-white">
+            <div className="p-2.5 rounded-xl bg-[#008CD3] text-white">
               <BookOpen className="w-5 h-5" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="font-serif font-bold text-xl">
+                <h3 className="font-sans font-bold text-lg">
                   Annual Report 2025–2026
                 </h3>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-amber-300 bg-[#2C3A3F] px-2 py-0.5 rounded border border-stone-700">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-amber-300 bg-[#1A4E9E] px-2 py-0.5 rounded border border-stone-700">
                   Official Publication
                 </span>
               </div>
@@ -46,18 +46,18 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
 
           <button
             onClick={onClose}
-            className="text-stone-400 hover:text-white p-2 rounded-lg hover:bg-[#2C3A3F] transition-colors cursor-pointer"
+            className="text-stone-400 hover:text-white p-2 rounded-lg hover:bg-[#1A4E9E] transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Tab Selection Bar */}
-        <div className="bg-[#F7F5F0] border-b border-[#ECE7DF] px-6 py-2 flex items-center gap-4 text-xs font-bold text-[#1B262C]">
+        <div className="bg-[#F4F7FA] border-b border-[#E6EEF5] px-6 py-2 flex items-center gap-4 text-xs font-bold text-[#0D3B82]">
           <button
             onClick={() => setActiveTab('overview')}
             className={`py-2 px-3 rounded-lg transition-colors cursor-pointer ${
-              activeTab === 'overview' ? 'bg-white shadow-2xs text-[#C1622D]' : 'hover:bg-stone-200/60'
+              activeTab === 'overview' ? 'bg-white shadow-2xs text-[#008CD3]' : 'hover:bg-stone-200/60'
             }`}
           >
             Report Summary & Introduction
@@ -65,7 +65,7 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
           <button
             onClick={() => setActiveTab('sections')}
             className={`py-2 px-3 rounded-lg transition-colors cursor-pointer ${
-              activeTab === 'sections' ? 'bg-white shadow-2xs text-[#C1622D]' : 'hover:bg-stone-200/60'
+              activeTab === 'sections' ? 'bg-white shadow-2xs text-[#008CD3]' : 'hover:bg-stone-200/60'
             }`}
           >
             8 Welfare Pillars
@@ -73,7 +73,7 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
           <button
             onClick={() => setActiveTab('strategic')}
             className={`py-2 px-3 rounded-lg transition-colors cursor-pointer ${
-              activeTab === 'strategic' ? 'bg-white shadow-2xs text-[#C1622D]' : 'hover:bg-stone-200/60'
+              activeTab === 'strategic' ? 'bg-white shadow-2xs text-[#008CD3]' : 'hover:bg-stone-200/60'
             }`}
           >
             Strategic Objectives 2026–2027
@@ -87,16 +87,16 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
             <div className="space-y-6">
               
               {/* Cover Card Mockup */}
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center p-6 bg-[#1B262C] text-white rounded-2xl">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center p-6 bg-[#0D3B82] text-white rounded-2xl">
                 <div className="md:col-span-8 space-y-3">
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#C1622D] text-white text-[11px] font-bold">
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#008CD3] text-white text-[11px] font-bold">
                     <Award className="w-3.5 h-3.5" />
                     <span>CELEBRATING 27 YEARS</span>
                   </div>
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold leading-tight">
+                  <h2 className="font-sans text-xl sm:text-2xl font-bold leading-tight">
                     AL-ALA EDUCATION FOUNDATION
                   </h2>
-                  <div className="font-serif text-lg text-amber-300">
+                  <div className="font-sans text-base text-amber-300 font-bold tracking-wider">
                     ANNUAL REPORT 2025–2026
                   </div>
                   <p className="text-xs text-stone-300 leading-relaxed font-sans max-w-xl">
@@ -109,7 +109,7 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
 
                 <div className="md:col-span-4 bg-white/10 p-4 rounded-xl border border-white/20 text-center space-y-2">
                   <FileText className="w-10 h-10 text-amber-400 mx-auto" />
-                  <div className="font-serif text-xs font-bold text-stone-200">
+                  <div className="font-sans text-xs font-bold text-stone-200 uppercase tracking-wider">
                     Official Document
                   </div>
                   <div className="text-[11px] text-stone-300">
@@ -117,7 +117,7 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
                   </div>
                   <button
                     onClick={handleDownloadSim}
-                    className="w-full bg-[#C1622D] hover:bg-[#A85020] text-white font-bold text-xs py-2 rounded transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+                    className="w-full bg-[#008CD3] hover:bg-[#007AB8] text-white font-bold text-xs py-2 rounded transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
                   >
                     <Download className="w-3.5 h-3.5" />
                     <span>Download PDF</span>
@@ -126,8 +126,8 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
               </div>
 
               {/* Introduction Text */}
-              <div className="space-y-3 p-5 bg-[#F7F5F0] rounded-xl border border-[#ECE7DF]">
-                <h4 className="font-serif font-bold text-lg text-[#1B262C]">
+              <div className="space-y-3 p-5 bg-[#F4F7FA] rounded-xl border border-[#E6EEF5]">
+                <h4 className="font-sans font-bold text-base text-[#0D3B82]">
                   Report Introduction
                 </h4>
                 <p className="text-stone-700 text-xs sm:text-sm leading-relaxed">
@@ -137,24 +137,24 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
 
               {/* Core Accomplishments List */}
               <div className="space-y-3">
-                <h4 className="font-serif font-bold text-[#1B262C] text-base">
+                <h4 className="font-sans font-bold text-[#0D3B82] text-sm uppercase tracking-wider">
                   Annual Report Highlights (2025–2026)
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="p-3 bg-stone-50 rounded-lg border border-stone-200 flex items-start gap-2.5">
-                    <CheckCircle className="w-4 h-4 text-[#C1622D] shrink-0 mt-0.5" />
+                    <CheckCircle className="w-4 h-4 text-[#008CD3] shrink-0 mt-0.5" />
                     <span className="text-xs text-stone-700">Shaukat Khanum Cancer Hospital & Edhi Homes ration support</span>
                   </div>
                   <div className="p-3 bg-stone-50 rounded-lg border border-stone-200 flex items-start gap-2.5">
-                    <CheckCircle className="w-4 h-4 text-[#C1622D] shrink-0 mt-0.5" />
+                    <CheckCircle className="w-4 h-4 text-[#008CD3] shrink-0 mt-0.5" />
                     <span className="text-xs text-stone-700">Free Education & Scholarship Program for orphans and deserving children</span>
                   </div>
                   <div className="p-3 bg-stone-50 rounded-lg border border-stone-200 flex items-start gap-2.5">
-                    <CheckCircle className="w-4 h-4 text-[#C1622D] shrink-0 mt-0.5" />
+                    <CheckCircle className="w-4 h-4 text-[#008CD3] shrink-0 mt-0.5" />
                     <span className="text-xs text-stone-700">Gaza Relief Camps & Community Bake Sale fundraising drives</span>
                   </div>
                   <div className="p-3 bg-stone-50 rounded-lg border border-stone-200 flex items-start gap-2.5">
-                    <CheckCircle className="w-4 h-4 text-[#C1622D] shrink-0 mt-0.5" />
+                    <CheckCircle className="w-4 h-4 text-[#008CD3] shrink-0 mt-0.5" />
                     <span className="text-xs text-stone-700">Free Dental & Medical Checkup Camps for students and local families</span>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
 
           {activeTab === 'sections' && (
             <div className="space-y-4">
-              <h4 className="font-serif font-bold text-lg text-[#1B262C]">
+              <h4 className="font-sans font-bold text-base text-[#0D3B82]">
                 8 Core Welfare Sections from the 2025–2026 Report
               </h4>
 
@@ -173,14 +173,14 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
                 {WELFARE_PILLARS.map((p) => (
                   <div key={p.id} className="p-4 rounded-xl bg-stone-50 border border-stone-200 space-y-2">
                     <div className="flex items-center justify-between">
-                      <span className="font-serif text-xs font-bold text-[#C1622D] bg-[#F7F5F0] px-2 py-0.5 rounded">
+                      <span className="font-mono text-xs font-bold text-[#008CD3] bg-[#F4F7FA] px-2 py-0.5 rounded">
                         Pillar {p.number}
                       </span>
                       <span className="text-[11px] font-semibold text-stone-500">
                         {p.activities.length} Activities
                       </span>
                     </div>
-                    <h5 className="font-serif font-bold text-[#1B262C] text-sm">
+                    <h5 className="font-sans font-bold text-[#0D3B82] text-xs uppercase tracking-wider">
                       {p.title}
                     </h5>
                     <p className="text-xs text-stone-600 line-clamp-2">
@@ -194,7 +194,7 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
 
           {activeTab === 'strategic' && (
             <div className="space-y-4">
-              <h4 className="font-serif font-bold text-lg text-[#1B262C]">
+              <h4 className="font-sans font-bold text-base text-[#0D3B82]">
                 Strategic Objectives 2026–2027
               </h4>
               <p className="text-xs text-stone-600">
@@ -213,11 +213,11 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
                   "Support humanitarian relief efforts and timely emergency response initiatives",
                   "Ensure sustainable institutional growth and long-term organizational development"
                 ].map((goal, idx) => (
-                  <div key={idx} className="flex items-start gap-3 p-3 bg-[#F7F5F0] rounded-lg border border-[#ECE7DF]">
-                    <span className="font-serif text-xs font-bold text-[#C1622D] w-5 h-5 rounded-full bg-white flex items-center justify-center shrink-0 shadow-2xs">
+                  <div key={idx} className="flex items-start gap-3 p-3 bg-[#F4F7FA] rounded-lg border border-[#E6EEF5]">
+                    <span className="font-mono text-xs font-bold text-[#008CD3] w-5 h-5 rounded-full bg-white flex items-center justify-center shrink-0 shadow-2xs">
                       {idx + 1}
                     </span>
-                    <span className="text-xs font-medium text-[#1B262C]">
+                    <span className="text-xs font-medium text-[#0D3B82]">
                       {goal}
                     </span>
                   </div>
@@ -236,7 +236,7 @@ export const AnnualReportModal: React.FC<AnnualReportModalProps> = ({ isOpen, on
 
           <button
             onClick={handleDownloadSim}
-            className="bg-[#1B262C] hover:bg-[#C1622D] text-white font-bold text-xs px-5 py-2.5 rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer"
+            className="bg-[#0D3B82] hover:bg-[#008CD3] text-white font-bold text-xs px-5 py-2.5 rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer"
           >
             <Download className="w-3.5 h-3.5" />
             <span>Download Full Report (PDF)</span>

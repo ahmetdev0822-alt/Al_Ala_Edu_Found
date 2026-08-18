@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { PageView, WelfareProgram, ActivityStory } from './types';
+import { PageView, WelfarePillar, ActivityStory } from './types';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
@@ -19,7 +19,7 @@ export default function App() {
   const [currentView, setCurrentView] = useState<PageView>('home');
   
   // Modal States
-  const [selectedProgram, setSelectedProgram] = useState<WelfareProgram | null>(null);
+  const [selectedProgram, setSelectedProgram] = useState<WelfarePillar | null>(null);
   const [selectedStory, setSelectedStory] = useState<ActivityStory | null>(null);
   const [isZakatModalOpen, setIsZakatModalOpen] = useState(false);
   const [isReportModalOpen, setIsReportModalOpen] = useState(false);
@@ -30,7 +30,7 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentView]);
 
-  const handleOpenProgramDetail = (program: WelfareProgram) => {
+  const handleOpenProgramDetail = (program: WelfarePillar) => {
     setSelectedProgram(program);
   };
 
@@ -45,7 +45,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FCFCFA] text-[#1B262C] font-sans antialiased selection:bg-[#C1622D] selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#0D3B82] font-sans antialiased selection:bg-[#008CD3] selection:text-white">
       
       {/* Top Navigation */}
       <Navbar
@@ -107,10 +107,10 @@ export default function App() {
         {/* Quick Zakat Calculator Button */}
         <button
           onClick={() => setIsZakatModalOpen(true)}
-          className="pointer-events-auto bg-[#1B262C] hover:bg-[#2C3A3F] text-amber-300 font-serif font-bold text-xs px-4 py-3 rounded-full shadow-xl border border-amber-400/30 flex items-center gap-2 transition-all hover:scale-105 cursor-pointer group"
+          className="pointer-events-auto bg-[#0D3B82] hover:bg-[#1A4E9E] text-amber-300 font-sans font-bold text-xs px-4 py-3 rounded-full shadow-xl border border-amber-400/30 flex items-center gap-2 transition-all hover:scale-105 cursor-pointer group"
           title="Open Zakat & Sadaqah Calculator"
         >
-          <div className="p-1.5 rounded-full bg-[#C1622D] text-white">
+          <div className="p-1.5 rounded-full bg-[#008CD3] text-white">
             <Calculator className="w-4 h-4" />
           </div>
           <span className="hidden sm:inline">Calculate Zakat</span>
@@ -120,7 +120,7 @@ export default function App() {
         {currentView !== 'donate' && (
           <button
             onClick={() => setCurrentView('donate')}
-            className="pointer-events-auto bg-[#C1622D] hover:bg-[#A85020] text-white font-bold text-xs px-5 py-3 rounded-full shadow-xl flex items-center gap-2 transition-all hover:scale-105 cursor-pointer group"
+            className="pointer-events-auto bg-[#008CD3] hover:bg-[#007AB8] text-white font-bold text-xs px-5 py-3 rounded-full shadow-xl flex items-center gap-2 transition-all hover:scale-105 cursor-pointer group"
           >
             <Heart className="w-4 h-4 fill-white/20 group-hover:scale-110 transition-transform" />
             <span>Donate Now</span>

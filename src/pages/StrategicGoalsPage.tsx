@@ -14,16 +14,23 @@ export const StrategicGoalsPage: React.FC<StrategicGoalsPageProps> = ({
   openReportModal 
 }) => {
   return (
-    <div className="w-full bg-[#FCFCFA] pb-20 font-sans">
+    <div className="w-full bg-[#F8FAFC] pb-20 font-sans">
       
       {/* Header Banner */}
-      <section className="bg-[#1B262C] text-white py-16 md:py-20 px-4 sm:px-6 lg:px-8 border-b border-[#2C3A3F]">
-        <div className="max-w-7xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C1622D]/30 border border-[#C1622D]/50 text-amber-300 text-xs font-semibold">
-            <Target className="w-3.5 h-3.5 text-[#C1622D]" />
+      <section className="relative bg-[#0D3B82] text-white py-20 md:py-24 px-4 sm:px-6 lg:px-8 border-b border-[#1A4E9E] overflow-hidden">
+        {/* Background Image with Dark Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-45 mix-blend-overlay"
+          style={{ backgroundImage: "url('/assets/img_-035.png')" }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0D3B82] via-[#0D3B82]/70 to-transparent"></div>
+
+        <div className="relative max-w-7xl mx-auto space-y-4 z-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#008CD3]/30 border border-[#008CD3]/50 text-amber-300 text-xs font-semibold">
+            <Target className="w-3.5 h-3.5 text-[#008CD3]" />
             <span>INSTITUTIONAL ROADMAP • 2026–2027</span>
           </div>
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="font-sans text-3xl sm:text-4xl md:text-[44px] font-black leading-tight tracking-tight">
             Strategic Objectives 2026–2027
           </h1>
           <p className="text-stone-300 text-base max-w-3xl leading-relaxed">
@@ -37,19 +44,19 @@ export const StrategicGoalsPage: React.FC<StrategicGoalsPageProps> = ({
 
       {/* Chairperson Endorsement Box */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
-        <div className="p-8 bg-[#2C3A3F] text-white rounded-3xl space-y-4 relative overflow-hidden">
+        <div className="p-8 bg-[#1A4E9E] text-white rounded-3xl space-y-4 relative overflow-hidden">
           <div className="flex items-center gap-2 text-xs font-bold text-amber-300 uppercase tracking-widest">
-            <Sparkles className="w-4 h-4 text-[#C1622D]" />
+            <Sparkles className="w-4 h-4 text-[#008CD3]" />
             <span>LEADERSHIP COMMITMENT</span>
           </div>
 
-          <p className="font-serif text-lg sm:text-xl font-medium leading-relaxed italic text-stone-100 max-w-4xl">
+          <p className="font-sans text-base sm:text-lg font-normal leading-relaxed italic text-stone-100 max-w-4xl">
             "These strategic objectives represent our solemn vow to the communities we serve. Through disciplined governance, research-informed pedagogy, and generous public support, we aim to transform thousands more lives in 2026–2027."
           </p>
 
           <div className="pt-4 border-t border-stone-600 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <div className="font-serif font-bold text-amber-400 text-base">
+              <div className="font-sans font-bold text-amber-400 text-sm uppercase tracking-wider">
                 {FOUNDATION_META.chairperson}
               </div>
               <div className="text-xs text-stone-300">
@@ -59,7 +66,7 @@ export const StrategicGoalsPage: React.FC<StrategicGoalsPageProps> = ({
 
             <button
               onClick={openReportModal}
-              className="bg-[#C1622D] hover:bg-[#A85020] text-white font-bold text-xs px-5 py-2.5 rounded-lg transition-colors flex items-center gap-2 cursor-pointer shrink-0"
+              className="bg-[#008CD3] hover:bg-[#007AB8] text-white font-bold text-xs px-5 py-2.5 rounded-lg transition-colors flex items-center gap-2 cursor-pointer shrink-0"
             >
               <BookOpen className="w-4 h-4" />
               <span>View Full Report Summary</span>

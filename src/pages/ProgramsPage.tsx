@@ -51,16 +51,23 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
   });
 
   return (
-    <div className="w-full bg-[#FCFCFA] pb-24 font-sans">
+    <div className="w-full bg-[#F8FAFC] pb-24 font-sans">
       
       {/* Top Header */}
-      <section className="bg-[#1B262C] text-white py-16 md:py-20 px-4 sm:px-6 lg:px-8 border-b border-[#2C3A3F]">
-        <div className="max-w-7xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C1622D]/30 border border-[#C1622D]/50 text-amber-300 text-xs font-semibold">
-            <Layers className="w-3.5 h-3.5 text-[#C1622D]" />
+      <section className="relative bg-[#0D3B82] text-white py-20 md:py-24 px-4 sm:px-6 lg:px-8 border-b border-[#1A4E9E] overflow-hidden">
+        {/* Background Image with Dark Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-45 mix-blend-overlay"
+          style={{ backgroundImage: "url('/assets/img_-020.png')" }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0D3B82] via-[#0D3B82]/70 to-transparent"></div>
+
+        <div className="relative max-w-7xl mx-auto space-y-4 z-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#008CD3]/30 border border-[#008CD3]/50 text-amber-300 text-xs font-semibold">
+            <Layers className="w-3.5 h-3.5 text-[#008CD3]" />
             <span>ANNUAL REPORT 2025–2026 PROGRAM DIRECTORY</span>
           </div>
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="font-sans text-3xl sm:text-4xl md:text-[44px] font-black leading-tight tracking-tight">
             Our 8 Focus Areas & Welfare Programs
           </h1>
           <p className="text-stone-300 text-base max-w-3xl leading-relaxed">
@@ -79,8 +86,8 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
               onClick={() => handleTabChange('all')}
               className={`px-3.5 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-colors cursor-pointer ${
                 activeTabId === 'all'
-                  ? 'bg-[#1B262C] text-white'
-                  : 'bg-[#F7F5F0] text-stone-700 hover:bg-stone-200'
+                  ? 'bg-[#0D3B82] text-white'
+                  : 'bg-[#F4F7FA] text-stone-700 hover:bg-stone-200'
               }`}
             >
               All 8 Pillars
@@ -91,8 +98,8 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
                 onClick={() => handleTabChange(p.id)}
                 className={`px-3.5 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-colors cursor-pointer ${
                   activeTabId === p.id
-                    ? 'bg-[#C1622D] text-white'
-                    : 'bg-[#F7F5F0] text-stone-700 hover:bg-stone-200'
+                    ? 'bg-[#008CD3] text-white'
+                    : 'bg-[#F4F7FA] text-stone-700 hover:bg-stone-200'
                 }`}
               >
                 {p.number}. {p.title}
@@ -108,7 +115,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
               placeholder="Search activities (e.g., cancer, Gaza, books)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-4 py-2 rounded-lg bg-[#F7F5F0] text-xs font-medium text-[#1B262C] focus:outline-none focus:ring-2 focus:ring-[#C1622D] border border-stone-200"
+              className="w-full pl-9 pr-4 py-2 rounded-lg bg-[#F4F7FA] text-xs font-medium text-[#0D3B82] focus:outline-none focus:ring-2 focus:ring-[#008CD3] border border-stone-200"
             />
           </div>
 
@@ -119,9 +126,9 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 space-y-16">
         
         {filteredPillars.length === 0 ? (
-          <div className="p-12 text-center bg-[#F7F5F0] rounded-2xl border border-stone-200 space-y-3">
+          <div className="p-12 text-center bg-[#F4F7FA] rounded-2xl border border-stone-200 space-y-3">
             <Filter className="w-8 h-8 text-stone-400 mx-auto" />
-            <h3 className="font-serif font-bold text-lg text-[#1B262C]">
+            <h3 className="font-sans font-bold text-base sm:text-lg text-[#0D3B82]">
               No matching programs found
             </h3>
             <p className="text-xs text-stone-500">
@@ -129,33 +136,35 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
             </p>
             <button
               onClick={() => { setSearchQuery(''); setActiveTabId('all'); }}
-              className="text-xs font-bold text-[#C1622D] underline cursor-pointer"
+              className="text-xs font-bold text-[#008CD3] underline cursor-pointer"
             >
               Clear Search Filters
             </button>
           </div>
         ) : (
-          filteredPillars.map((pillar) => (
-            <div
-              key={pillar.id}
-              id={`pillar-${pillar.id}`}
-              className="scroll-mt-32 bg-white rounded-3xl overflow-hidden shadow-md border border-stone-200/90 transition-all duration-300"
-            >
-              {/* Top Banner Grid */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
-                
-                {/* Left Photo (5 cols) */}
-                <div className="lg:col-span-5 relative h-64 lg:h-auto bg-stone-900">
+          filteredPillars.map((pillar, idx) => {
+            const isImageRight = idx % 2 === 1;
+            return (
+              <div
+                key={pillar.id}
+                id={`pillar-${pillar.id}`}
+                className="scroll-mt-32 bg-white rounded-3xl overflow-hidden shadow-md border border-stone-200/90 transition-all duration-300"
+              >
+                {/* Top Banner Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                  
+                  {/* Photo (5 cols) - Alternating layout on large screens */}
+                  <div className={`lg:col-span-5 relative h-64 lg:h-auto bg-stone-900 ${isImageRight ? 'lg:order-last' : 'lg:order-first'}`}>
                   <img
                     src={pillar.imageUrl}
                     alt={pillar.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1B262C] via-transparent to-transparent lg:hidden"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D3B82] via-transparent to-transparent lg:hidden"></div>
                   
                   {/* Floating Number Badge */}
                   <div className="absolute top-4 left-4 z-10">
-                    <span className="font-serif text-xs font-bold text-white bg-[#C1622D] px-3 py-1 rounded shadow-sm">
+                    <span className="font-mono text-xs font-bold text-white bg-[#008CD3] px-3 py-1 rounded shadow-sm">
                       PILLAR {pillar.number}
                     </span>
                   </div>
@@ -174,7 +183,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
                   
                   <div className="space-y-3">
                     <div className="flex items-center justify-between gap-2">
-                      <span className="text-xs font-bold uppercase tracking-widest text-[#C1622D]">
+                      <span className="text-xs font-bold uppercase tracking-widest text-[#008CD3]">
                         ANNUAL REPORT 2025–2026
                       </span>
                       {pillar.highlightTag && (
@@ -184,18 +193,18 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
                       )}
                     </div>
 
-                    <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#1B262C]">
+                    <h2 className="font-sans text-xl sm:text-2xl font-bold text-[#0D3B82]">
                       {pillar.title}
                     </h2>
-
-                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed italic font-serif">
+ 
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed italic font-sans">
                       "{pillar.fullDescription}"
                     </p>
                   </div>
 
                   {/* Verbatim Major Activities Checklist */}
                   <div className="space-y-3">
-                    <h3 className="font-serif font-bold text-sm text-[#1B262C] uppercase tracking-wider border-b border-stone-200 pb-2">
+                    <h3 className="font-sans font-bold text-xs text-[#0D3B82] uppercase tracking-wider border-b border-stone-200 pb-2">
                       Official Activities & Initiatives:
                     </h3>
 
@@ -203,10 +212,10 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
                       {pillar.activities.map((act, idx) => (
                         <div
                           key={idx}
-                          className="flex items-start gap-2.5 p-2.5 bg-[#F7F5F0] rounded-lg border border-[#ECE7DF] hover:border-[#C1622D] transition-colors"
+                          className="flex items-start gap-2.5 p-2.5 bg-[#F4F7FA] rounded-lg border border-[#E6EEF5] hover:border-[#008CD3] transition-colors"
                         >
-                          <CheckCircle2 className="w-4 h-4 text-[#C1622D] shrink-0 mt-0.5" />
-                          <span className="text-xs text-[#2C3A3F] font-medium leading-snug">
+                          <CheckCircle2 className="w-4 h-4 text-[#008CD3] shrink-0 mt-0.5" />
+                          <span className="text-xs text-[#1A4E9E] font-medium leading-snug">
                             {act}
                           </span>
                         </div>
@@ -222,7 +231,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
 
                     <button
                       onClick={() => setCurrentView('donate')}
-                      className="w-full sm:w-auto bg-[#C1622D] hover:bg-[#A85020] text-white font-bold text-xs px-6 py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-sm"
+                      className="w-full sm:w-auto bg-[#008CD3] hover:bg-[#007AB8] text-white font-bold text-xs px-6 py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-sm"
                     >
                       <Heart className="w-3.5 h-3.5 fill-white/20" />
                       <span>Donate to {pillar.title}</span>
@@ -233,7 +242,8 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
 
               </div>
             </div>
-          ))
+          );
+        })
         )}
 
       </div>

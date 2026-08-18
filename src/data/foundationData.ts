@@ -19,7 +19,7 @@ export const CHAIRPERSON_MESSAGE = {
   quote: "Alhamdulillah, during the academic year 2025–2026, Al-Ala Education Foundation continued its commitment to serving society through education, welfare, community development, and humanitarian initiatives. Guided by Islamic values and a spirit of service, the Foundation worked across multiple sectors to support students, families, women, and communities while promoting education, health, and social responsibility.",
   author: "Ma'am Tayyiba Imtiaz",
   role: "Chairperson, Al-Ala Education Foundation",
-  image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800"
+  image: "/assets/img_-036.png"
 };
 
 export const WELFARE_PILLARS: WelfarePillar[] = [
@@ -29,7 +29,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     title: "Social Welfare",
     shortDescription: "Supporting deserving individuals and families through food security, cancer patient support, and environmental drives.",
     fullDescription: "The Foundation actively participated in various welfare initiatives aimed at supporting deserving individuals and families across Lahore and surrounding regions.",
-    imageUrl: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1000",
+    imageUrl: "/assets/img_-009.png",
     impactMetric: "10+ Welfare Collaborations",
     activities: [
       "Food Distribution Drive across underprivileged neighborhoods",
@@ -50,7 +50,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     title: "Child Welfare",
     shortDescription: "Nurturing moral, spiritual, and educational growth for every child with free schooling, orphan care, and nutritional support.",
     fullDescription: "Al-Ala Education Foundation remained dedicated to the moral, spiritual, and educational development of children across all strata of society.",
-    imageUrl: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=1000",
+    imageUrl: "/assets/img_-014.png",
     impactMetric: "100% Free Tuition for Orphans",
     highlightTag: "Core Focus",
     activities: [
@@ -74,7 +74,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     title: "Educational Welfare",
     shortDescription: "The cornerstone of our mission — empowering girls and boys with scholarships, teacher training, and STEM learning.",
     fullDescription: "Education remained the cornerstone of the Foundation's mission, elevating school standards and expanding access to quality Islamic and modern education.",
-    imageUrl: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=1000",
+    imageUrl: "/assets/img_-018.png",
     impactMetric: "27 Years of Excellence",
     highlightTag: "Flagship Pillar",
     activities: [
@@ -98,7 +98,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     title: "Women Welfare",
     shortDescription: "Empowering women through adult education, Islamic learning circles, skill workshops, and transitional support.",
     fullDescription: "Empowering women through education, Islamic knowledge, and personal development remained a core focus of our community outreach.",
-    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000",
+    imageUrl: "/assets/img_-022.png",
     impactMetric: "Free Skill Development",
     activities: [
       "Mothers' Workshops on positive parenting and child psychology",
@@ -114,7 +114,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     title: "Elderly & Disabled Welfare",
     shortDescription: "Extending dignified care, mobility assistance, friendship circles, and inclusive education for special needs individuals.",
     fullDescription: "The Foundation extended support to vulnerable members of society through direct assistance and close collaboration with specialized welfare organizations.",
-    imageUrl: "https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=1000",
+    imageUrl: "/assets/img_-024.png",
     impactMetric: "Care Without Barriers",
     activities: [
       "Elderly Care and Outreach Program visiting seniors in need",
@@ -133,7 +133,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     title: "Health Welfare",
     shortDescription: "Free medical & dental checkup camps, health awareness campaigns, and direct medical expense aid for the needy.",
     fullDescription: "Several awareness and support initiatives were conducted to promote physical well-being, preventative health, and healthy lifestyles.",
-    imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1000",
+    imageUrl: "/assets/img_-028.png",
     impactMetric: "Free Medical & Dental Camps",
     activities: [
       "Medical Support for Poor and Needy covering essential treatments",
@@ -150,7 +150,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     title: "Economic Welfare",
     shortDescription: "Providing wedding support, interest-free loans (Qard-e-Hasana), clothing drives, and direct economic relief.",
     fullDescription: "The Foundation supported struggling families through dignified economic assistance programs to foster financial stability.",
-    imageUrl: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb7?auto=format&fit=crop&q=80&w=1000",
+    imageUrl: "/assets/img_-029.png",
     impactMetric: "Interest-Free Loan Support",
     activities: [
       "Wedding Support Assistance for deserving brides",
@@ -165,7 +165,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     title: "Community Outreach & Humanitarian Relief",
     shortDescription: "Immediate emergency aid for flood and earthquake victims, Gaza relief drives, and community bake sales.",
     fullDescription: "Al-Ala Education Foundation actively promoted community engagement and humanitarian responsibility through fundraising initiatives and emergency relief efforts.",
-    imageUrl: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1000",
+    imageUrl: "/assets/img_-032.png",
     impactMetric: "Emergency Emergency Response",
     highlightTag: "Global & Local Relief",
     activities: [
@@ -185,7 +185,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     category: "Child & Educational Welfare",
     pillarId: "child-welfare",
     date: "Academic Year 2025–2026",
-    imageUrl: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800",
+    imageUrl: "/assets/img_-013.png",
     summary: "Providing 100% free schooling, uniforms, books, and after-school academic support to orphans and underprivileged students.",
     fullDetails: "At Al-Ala, we believe economic background should never restrict a child's academic and moral development. This past year, over hundreds of students received full scholarships, free textbook sets, and daily nutritious snacks through our free education initiative."
   },
@@ -195,7 +195,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     category: "Health Welfare",
     pillarId: "health-welfare",
     date: "Annual Report Highlight",
-    imageUrl: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800",
+    imageUrl: "/assets/img_-027.png",
     summary: "Professional dental screening, general health check-ups, and free medicine distribution for students and community members.",
     fullDetails: "Volunteer doctors and dental surgeons conducted complete oral hygiene screenings for young students, providing preventative care kits, toothbrushes, and specialized referrals for treatments funded directly by the Foundation."
   },
@@ -205,7 +205,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     category: "Community Relief",
     pillarId: "community-relief",
     date: "Relief Drive 2025–2026",
-    imageUrl: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80&w=800",
+    imageUrl: "/assets/img_-033.png",
     summary: "Students and faculty organized community bake sales to mobilize emergency aid for Gaza Relief Camps and local flood victims.",
     fullDetails: "In a powerful demonstration of youth civic responsibility, Al-Ala school students prepared homemade treats and crafts, raising substantial relief funds distributed through verified humanitarian partners for Gaza and flood-affected districts in Pakistan."
   },
@@ -215,7 +215,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     category: "Social Welfare",
     pillarId: "social-welfare",
     date: "Ramadan & Year-Round",
-    imageUrl: "https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&q=80&w=800",
+    imageUrl: "/assets/img_-011.png",
     summary: "Sponsoring meal distributions and cancer treatment aid through Shaukat Khanum Hospital and Hameed Maggo Trust.",
     fullDetails: "Through regular charity allocations, the Foundation provided financial assistance to low-income cancer patients undergoing chemotherapy, while serving thousands of warm Iftar meals daily during Ramadan."
   },
@@ -225,7 +225,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     category: "Child & Disabled Welfare",
     pillarId: "elderly-disabled-welfare",
     date: "Winter Outreach 2025–26",
-    imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800",
+    imageUrl: "/assets/img_-025.png",
     summary: "Distributing tailored clothing, mobility aids, and sensory play materials to children with special needs.",
     fullDetails: "Collaborating with Chaman Institute of Special Children, our student volunteers delivered custom winter clothing sets, mobility aids, and organized an inclusive day of storytelling and creative arts."
   },
@@ -235,7 +235,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     category: "Educational Welfare",
     pillarId: "educational-welfare",
     date: "Academic Year 2025–2026",
-    imageUrl: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=800",
+    imageUrl: "/assets/img_-019.png",
     summary: "'Educate a Girl, Empower a Nation' — hands-on science laboratories and digital literacy programs for female scholars.",
     fullDetails: "Our dedicated STEM workshops provided young female students with hands-on coding modules, robotics kits, and career mentorship sessions from leading female Muslim educators and professionals."
   }
@@ -305,7 +305,7 @@ export const DONATION_CAUSES: DonationOption[] = [
     description: "Covers full tuition, school uniforms, textbooks, digital learning access, and nutritional school lunches for 1 academic year.",
     recommendedAmountPKR: 15000,
     category: "education",
-    imageUrl: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600"
+    imageUrl: "/assets/img_-015.png"
   },
   {
     id: "cancer-patient-ration",
@@ -313,7 +313,7 @@ export const DONATION_CAUSES: DonationOption[] = [
     description: "Provides monthly food packs and financial medical aid to underprivileged cancer patients via Shaukat Khanum & Hameed Maggo Trust.",
     recommendedAmountPKR: 12000,
     category: "health",
-    imageUrl: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=600"
+    imageUrl: "/assets/img_-010.png"
   },
   {
     id: "ramadan-food-pack",
@@ -321,7 +321,7 @@ export const DONATION_CAUSES: DonationOption[] = [
     description: "Supplies a comprehensive family ration bag (flour, rice, oil, lentils, tea, sugar) lasting a deserving family for a full month.",
     recommendedAmountPKR: 8500,
     category: "food",
-    imageUrl: "https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&q=80&w=600"
+    imageUrl: "/assets/img_-012.png"
   },
   {
     id: "gaza-disaster-relief",
@@ -329,7 +329,7 @@ export const DONATION_CAUSES: DonationOption[] = [
     description: "Direct aid for emergency medical supplies, winter blankets, tents, and food packages in disaster and crisis zones.",
     recommendedAmountPKR: 10000,
     category: "relief",
-    imageUrl: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80&w=600"
+    imageUrl: "/assets/img_-034.png"
   },
   {
     id: "women-skill-training",
@@ -337,7 +337,7 @@ export const DONATION_CAUSES: DonationOption[] = [
     description: "Funds sewing machines, digital literacy devices, and course material for low-income women seeking economic self-sufficiency.",
     recommendedAmountPKR: 20000,
     category: "general",
-    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600"
+    imageUrl: "/assets/img_-023.png"
   }
 ];
 

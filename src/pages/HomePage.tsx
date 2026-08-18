@@ -8,6 +8,7 @@ import { ChairpersonQuote } from '../components/ChairpersonQuote';
 import { FeaturedPrograms } from '../components/FeaturedPrograms';
 import { StrategicGoalsSection } from '../components/StrategicGoalsSection';
 import { NewsletterBand } from '../components/NewsletterBand';
+import { HomeSlideshow } from '../components/HomeSlideshow';
 
 interface HomePageProps {
   setCurrentView: (view: PageView) => void;
@@ -26,6 +27,9 @@ export const HomePage: React.FC<HomePageProps> = ({
 }) => {
   return (
     <div className="w-full">
+      {/* Full-width Slideshow Banner just below Navbar */}
+      <HomeSlideshow />
+
       <HeroSection 
         setCurrentView={setCurrentView} 
         openReportModal={openReportModal} 

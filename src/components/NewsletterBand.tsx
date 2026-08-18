@@ -19,7 +19,7 @@ export const NewsletterBand: React.FC<NewsletterBandProps> = ({ setCurrentView }
   };
 
   return (
-    <section className="bg-[#C1622D] text-white py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#008CD3] text-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
@@ -28,7 +28,7 @@ export const NewsletterBand: React.FC<NewsletterBandProps> = ({ setCurrentView }
             <span className="text-xs uppercase tracking-widest font-bold text-amber-200">
               STAY CONNECTED WITH AL-ALA FOUNDATION
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold leading-tight">
+            <h2 className="font-sans text-2xl sm:text-3xl font-bold leading-tight">
               Join us in empowering communities — sign up for updates.
             </h2>
             <p className="text-amber-100 text-sm max-w-xl font-sans">
@@ -41,7 +41,7 @@ export const NewsletterBand: React.FC<NewsletterBandProps> = ({ setCurrentView }
             {isSubmitted ? (
               <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 text-center space-y-2 animate-in fade-in">
                 <CheckCircle className="w-8 h-8 text-amber-300 mx-auto" />
-                <h4 className="font-serif font-bold text-lg">JazakAllah Khair!</h4>
+                <h4 className="font-sans font-bold text-base">JazakAllah Khair!</h4>
                 <p className="text-xs text-amber-100">
                   You have been subscribed to Al-Ala Education Foundation quarterly newsletter updates.
                 </p>
@@ -57,12 +57,12 @@ export const NewsletterBand: React.FC<NewsletterBandProps> = ({ setCurrentView }
                       placeholder="Enter your email address"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="w-full pl-11 pr-4 py-3.5 rounded-lg bg-white text-[#1B262C] placeholder:text-stone-400 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-amber-300"
+                      className="w-full pl-11 pr-4 py-3.5 rounded-lg bg-white text-[#0D3B82] placeholder:text-stone-400 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-amber-300"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="bg-[#1B262C] hover:bg-[#2C3A3F] text-white font-bold text-sm px-6 py-3.5 rounded-lg transition-colors cursor-pointer whitespace-nowrap"
+                    className="bg-[#0D3B82] hover:bg-[#1A4E9E] text-white font-bold text-sm px-6 py-3.5 rounded-lg transition-colors cursor-pointer whitespace-nowrap"
                   >
                     Subscribe
                   </button>
