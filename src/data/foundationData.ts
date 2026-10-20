@@ -27,7 +27,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     id: "social-welfare",
     number: "01",
     title: "Social Welfare",
-    shortDescription: "Supporting deserving individuals and families through food security, cancer patient support, and environmental drives.",
+    shortDescription: "Food packs, cancer patient care, and urban tree drives.",
     fullDescription: "The Foundation actively participated in various welfare initiatives aimed at supporting deserving individuals and families across Lahore and surrounding regions.",
     imageUrl: "/assets/img_-009.png",
     impactMetric: "10+ Welfare Collaborations",
@@ -48,7 +48,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     id: "child-welfare",
     number: "02",
     title: "Child Welfare",
-    shortDescription: "Nurturing moral, spiritual, and educational growth for every child with free schooling, orphan care, and nutritional support.",
+    shortDescription: "100% free tuition, orphan care, and nutrition for children.",
     fullDescription: "Al-Ala Education Foundation remained dedicated to the moral, spiritual, and educational development of children across all strata of society.",
     imageUrl: "/assets/img_-014.png",
     impactMetric: "100% Free Tuition for Orphans",
@@ -72,7 +72,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     id: "educational-welfare",
     number: "03",
     title: "Educational Welfare",
-    shortDescription: "The cornerstone of our mission — empowering girls and boys with scholarships, teacher training, and STEM learning.",
+    shortDescription: "STEM learning, teacher training, and digital classrooms.",
     fullDescription: "Education remained the cornerstone of the Foundation's mission, elevating school standards and expanding access to quality Islamic and modern education.",
     imageUrl: "/assets/img_-018.png",
     impactMetric: "27 Years of Excellence",
@@ -96,7 +96,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     id: "women-welfare",
     number: "04",
     title: "Women Welfare",
-    shortDescription: "Empowering women through adult education, Islamic learning circles, skill workshops, and transitional support.",
+    shortDescription: "Vocational skills, adult literacy, and women's Quran circles.",
     fullDescription: "Empowering women through education, Islamic knowledge, and personal development remained a core focus of our community outreach.",
     imageUrl: "/assets/img_-022.png",
     impactMetric: "Free Skill Development",
@@ -112,7 +112,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     id: "elderly-disabled-welfare",
     number: "05",
     title: "Elderly & Disabled Welfare",
-    shortDescription: "Extending dignified care, mobility assistance, friendship circles, and inclusive education for special needs individuals.",
+    shortDescription: "Mobility aids, elder outreach, and special needs inclusion.",
     fullDescription: "The Foundation extended support to vulnerable members of society through direct assistance and close collaboration with specialized welfare organizations.",
     imageUrl: "/assets/img_-024.png",
     impactMetric: "Care Without Barriers",
@@ -131,7 +131,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     id: "health-welfare",
     number: "06",
     title: "Health Welfare",
-    shortDescription: "Free medical & dental checkup camps, health awareness campaigns, and direct medical expense aid for the needy.",
+    shortDescription: "Free medical screenings, dental camps, and medicine aid.",
     fullDescription: "Several awareness and support initiatives were conducted to promote physical well-being, preventative health, and healthy lifestyles.",
     imageUrl: "/assets/img_-028.png",
     impactMetric: "Free Medical & Dental Camps",
@@ -148,7 +148,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     id: "economic-welfare",
     number: "07",
     title: "Economic Welfare",
-    shortDescription: "Providing wedding support, interest-free loans (Qard-e-Hasana), clothing drives, and direct economic relief.",
+    shortDescription: "Interest-free Qard-e-Hasana loans and wedding assistance.",
     fullDescription: "The Foundation supported struggling families through dignified economic assistance programs to foster financial stability.",
     imageUrl: "/assets/img_-029.png",
     impactMetric: "Interest-Free Loan Support",
@@ -163,7 +163,7 @@ export const WELFARE_PILLARS: WelfarePillar[] = [
     id: "community-relief",
     number: "08",
     title: "Community Outreach & Humanitarian Relief",
-    shortDescription: "Immediate emergency aid for flood and earthquake victims, Gaza relief drives, and community bake sales.",
+    shortDescription: "Emergency flood response, disaster relief, and Gaza drives.",
     fullDescription: "Al-Ala Education Foundation actively promoted community engagement and humanitarian responsibility through fundraising initiatives and emergency relief efforts.",
     imageUrl: "/assets/img_-032.png",
     impactMetric: "Emergency Emergency Response",
@@ -186,7 +186,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     pillarId: "child-welfare",
     date: "Academic Year 2025–2026",
     imageUrl: "/assets/img_-013.png",
-    summary: "Providing 100% free schooling, uniforms, books, and after-school academic support to orphans and underprivileged students.",
+    summary: "100% free schooling, uniforms, and textbooks for orphan scholars.",
     fullDetails: "At Al-Ala, we believe economic background should never restrict a child's academic and moral development. This past year, over hundreds of students received full scholarships, free textbook sets, and daily nutritious snacks through our free education initiative."
   },
   {
@@ -196,7 +196,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     pillarId: "health-welfare",
     date: "Annual Report Highlight",
     imageUrl: "/assets/img_-027.png",
-    summary: "Professional dental screening, general health check-ups, and free medicine distribution for students and community members.",
+    summary: "Free professional oral screenings, preventative kits, and student checkups.",
     fullDetails: "Volunteer doctors and dental surgeons conducted complete oral hygiene screenings for young students, providing preventative care kits, toothbrushes, and specialized referrals for treatments funded directly by the Foundation."
   },
   {
@@ -206,7 +206,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     pillarId: "community-relief",
     date: "Relief Drive 2025–2026",
     imageUrl: "/assets/img_-033.png",
-    summary: "Students and faculty organized community bake sales to mobilize emergency aid for Gaza Relief Camps and local flood victims.",
+    summary: "Student-led bake sales mobilizing aid for Gaza and flood zones.",
     fullDetails: "In a powerful demonstration of youth civic responsibility, Al-Ala school students prepared homemade treats and crafts, raising substantial relief funds distributed through verified humanitarian partners for Gaza and flood-affected districts in Pakistan."
   },
   {
@@ -216,7 +216,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     pillarId: "social-welfare",
     date: "Ramadan & Year-Round",
     imageUrl: "/assets/img_-011.png",
-    summary: "Sponsoring meal distributions and cancer treatment aid through Shaukat Khanum Hospital and Hameed Maggo Trust.",
+    summary: "Daily hot Ramadan meals and cancer chemotherapy funding.",
     fullDetails: "Through regular charity allocations, the Foundation provided financial assistance to low-income cancer patients undergoing chemotherapy, while serving thousands of warm Iftar meals daily during Ramadan."
   },
   {
@@ -226,7 +226,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     pillarId: "elderly-disabled-welfare",
     date: "Winter Outreach 2025–26",
     imageUrl: "/assets/img_-025.png",
-    summary: "Distributing tailored clothing, mobility aids, and sensory play materials to children with special needs.",
+    summary: "Tailored winter clothing and mobility aids for special children.",
     fullDetails: "Collaborating with Chaman Institute of Special Children, our student volunteers delivered custom winter clothing sets, mobility aids, and organized an inclusive day of storytelling and creative arts."
   },
   {
@@ -236,7 +236,7 @@ export const RECENT_STORIES: ActivityStory[] = [
     pillarId: "educational-welfare",
     date: "Academic Year 2025–2026",
     imageUrl: "/assets/img_-019.png",
-    summary: "'Educate a Girl, Empower a Nation' — hands-on science laboratories and digital literacy programs for female scholars.",
+    summary: "Hands-on coding, robotics labs, and STEM mentorship for girls.",
     fullDetails: "Our dedicated STEM workshops provided young female students with hands-on coding modules, robotics kits, and career mentorship sessions from leading female Muslim educators and professionals."
   }
 ];
@@ -244,57 +244,57 @@ export const RECENT_STORIES: ActivityStory[] = [
 export const STRATEGIC_GOALS_2026_2027: StrategicGoal[] = [
   {
     id: 1,
-    title: "Promote Educational Excellence & Research-Informed Practice",
-    description: "Elevate classroom pedagogy, integrate modern digital tools with traditional Islamic ethics, and continuously measure student learning outcomes.",
-    targetCategory: "Educational Excellence"
+    title: "Modern Digital Learning",
+    description: "Integrating smart digital learning with Islamic ethics.",
+    targetCategory: "Education"
   },
   {
     id: 2,
-    title: "Expand Scholarships & Financial Assistance",
-    description: "Increase equitable access to education for orphans, single-mother households, and children of support staff across all grade levels.",
-    targetCategory: "Access & Inclusion"
+    title: "Expanded Scholarships",
+    description: "100% free tuition for orphans and single-parent households.",
+    targetCategory: "Inclusion"
   },
   {
     id: 3,
-    title: "Strengthen Community Welfare & Charitable Outreach",
-    description: "Expand ration distributions, food banks, and partnership drives with institutions like Edhi Foundation and Kashana Social Welfare.",
-    targetCategory: "Social Welfare"
+    title: "Food Security Outreach",
+    description: "Expanding monthly food banks and family ration drives.",
+    targetCategory: "Welfare"
   },
   {
     id: 4,
-    title: "Empower Women Through Leadership & Vocational Training",
-    description: "Launch new free digital skill courses, vocational certifications, and maternal health workshops for community women.",
-    targetCategory: "Women Empowerment"
+    title: "Women's Vocational Skills",
+    description: "Free digital skills, sewing, and health workshops.",
+    targetCategory: "Empowerment"
   },
   {
     id: 5,
-    title: "Advance Health, Well-Being & Public Awareness Initiatives",
-    description: "Host bi-monthly dental, eye, and general health camps in under-resourced neighborhoods alongside nutrition awareness drives.",
-    targetCategory: "Health & Wellness"
+    title: "Community Health Camps",
+    description: "Bi-monthly dental, eye, and general medical checkups.",
+    targetCategory: "Healthcare"
   },
   {
     id: 6,
-    title: "Build Strategic Partnerships with Community Organizations",
-    description: "Formalize collaborative MoUs with leading medical trusts, humanitarian NGOs, and academic bodies to amplify service reach.",
-    targetCategory: "Strategic Growth"
+    title: "Strategic Partnerships",
+    description: "Collaborations with leading hospitals and welfare trusts.",
+    targetCategory: "Growth"
   },
   {
     id: 7,
-    title: "Foster Community Leadership, Volunteerism & Social Responsibility",
-    description: "Engage youth through student-led welfare clubs, environmental drives, and community service projects.",
-    targetCategory: "Youth Engagement"
+    title: "Youth Social Leadership",
+    description: "Student-led welfare clubs, tree drives, and civic care.",
+    targetCategory: "Youth"
   },
   {
     id: 8,
-    title: "Support Humanitarian Relief Efforts & Timely Emergency Response",
-    description: "Maintain a rapid-deployment emergency relief fund for natural disasters, flood crises, and international humanitarian emergencies.",
-    targetCategory: "Humanitarian Action"
+    title: "Emergency Disaster Relief",
+    description: "Rapid-deployment fund for flood, crisis, and Gaza aid.",
+    targetCategory: "Relief"
   },
   {
     id: 9,
-    title: "Ensure Sustainable Institutional Growth & Long-Term Development",
-    description: "Enhance transparent financial auditing, donor governance, and endowment fund sustainability for generations to come.",
-    targetCategory: "Governance & Sustainability"
+    title: "Audited Governance",
+    description: "Transparent auditing and long-term endowment growth.",
+    targetCategory: "Governance"
   }
 ];
 
